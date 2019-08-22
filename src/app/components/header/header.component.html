@@ -1,0 +1,131 @@
+<!-- <div class="icon-bar"> -->
+<!--   <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>  -->
+<!--   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>  -->
+<!--   <a href="#" class="google"><i class="fa fa-google"></i></a>  -->
+<!--   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+<!--   <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>  -->
+<!-- </div> -->
+
+<header class="header">
+			
+  <!-- Top Bar -->
+  <div class="top_bar">
+    <div class="top_bar_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+              <ul class="top_bar_contact_list">
+                <li><div class="question">Call Us: +1 862-803-4216</div></li>
+                <li>
+                  <div>Contact Us: info@umiyaind.com</div>
+                </li>
+              </ul>
+<!--               <div class="top_bar_login ml-auto"> -->
+<!--                 <ul> -->
+<!--                   <li><a routerLink="/register">Register</a></li> -->
+<!--                   <li *ngIf="loginService.currentUserValue == null"><a (click)="onLogin();" style="color: white;">Login</a></li> -->
+<!--                   <li *ngIf="loginService.currentUserValue != null"><a (click)="onLogout();" style="color: white;">Logout</a></li> -->
+<!--                 </ul> -->
+<!--               </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>				
+  </div>
+
+  <!-- Header Content -->
+  <div class="header_container">
+<!--     <div class="container"> -->
+<!--       <div class="row"> -->
+<!--         <div class="col"> -->
+<!--         	<div class="logo_container"> -->
+        	<a routerLink="/index">
+<!--         		<div class="logo_content d-flex flex-row align-items-end justify-content-start"> -->
+<!--                   <div class="logo_img"> -->
+                  	<img src="../../assets/images/logo/1.jpg" alt="" style="height: 90px;width: 30%">
+<!--                   </div> -->
+<!--                 </div> -->
+            </a>
+<!--             </div> -->
+<!--         </div> -->
+<!--         </div>	 -->
+<!--       <div class="row"> -->
+<!--         <div class="col"> -->
+
+				<nav class="navbar navbar-expand-sm navbar-custom">
+<!--     <a href="/" class="navbar-brand">Custom</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+        <i class="fa fa-bars fa-lg py-1 text-white"></i>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCustom">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/aboutus">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" routerLink="/product">Product</a>
+<!--                 <a class="nav-link dropdown-toggle" routerLink="/product"  -->
+<!--                 	id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+<!--                   Product -->
+<!--                 </a> -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" 
+                	*ngFor="let product of productList">	
+          			<a class="dropdown-item" [routerLink]="['/details', product._id]">{{product.name}}</a>
+			    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contactus">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/admin">Admin</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--           		<nav class="navbar navbar-expand-sm navbar-custom" style="height: 40px;width: 100%"> -->
+<!-- 				  <a class="navbar-brand" href="#"></a> -->
+<!-- 				  <button class="navbar-toggler" type="button" data-toggle="collapse"  -->
+<!-- 				  	data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  -->
+<!-- 				  	aria-expanded="false" aria-label="Toggle navigation"> -->
+<!-- 				    <span class="navbar-toggler-icon"></span> -->
+<!-- 				  </button> -->
+				
+<!-- 				  <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+<!-- 				    <ul class="navbar-nav mr-auto"> -->
+<!-- 				      <li class="nav-item active"> -->
+<!-- 				        <a class="nav-link" routerLink="/index">Home <span class="sr-only">(current)</span></a> -->
+<!-- 				      </li> -->
+<!-- 				      <li class="nav-item"> -->
+<!-- 				        <a class="nav-link" routerLink="/aboutus">About Us</a> -->
+<!-- 				      </li> -->
+<!-- 					 <li class="nav-item"> -->
+<!-- 				        <a class="nav-link" routerLink="/product">Product</a> -->
+<!-- 				      </li> -->
+				      
+				      
+<!-- 				        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+<!-- 				          <div *ngFor="let product of productList">	 -->
+<!-- 				          		<a class="dropdown-item" [routerLink]="['/details', product._id]">{{product.name}}</a> -->
+<!-- 						  </div> -->
+<!-- 				        </div> -->
+
+
+<!-- 				      <li class="nav-item"> -->
+<!-- 				        <a class="nav-link" routerLink="/contactus">Contact Us</a> -->
+<!-- 				      </li> -->
+<!-- 				    </ul> -->
+<!-- 				  </div> -->
+<!-- 				  <nav class="navbar navbar-expand-sm navbar-custom"> -->
+<!-- 				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="height: 40px;"> -->
+<!-- 				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="height: 40px;">Search</button> -->
+<!-- 				  </nav> -->
+<!-- 				</nav> -->
+  </div>
+
+</header>
